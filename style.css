@@ -4,5 +4,36 @@
 }
 
 body {
-  background: seagreen;
+  background: #ebfcca;
+}
+.main-title {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 2;
+  letter-spacing: 3px;
+  color: #4d7c0f;
+  background-color: #f7fee7;
+  padding: 10px 30px;
+
+  display: inline-block;
+}
+
+.main-title-container {
+  margin: 60px 0 0 100px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.075);
+  display: inline-block;
+}
+
+.main-imgs {
+  display: flex;
+}
+
+img {
+  width: 350px;
+}
+
+.content-container {
+  width: 1500px;
+  margin: 100px auto;
 }

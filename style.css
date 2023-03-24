@@ -5,72 +5,77 @@
 }
 
 body {
-  background: #ebfcca;
+  /* background-color: #ebfcca; */
+  /* background-color: #ffedd5; */
+
+  font-family: "Playfair Display", serif;
 }
 
+/* REUSABLE STYLES */
+
+.grid--3-cols {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+}
+
+/* MAJOR COMPONENTS */
 .content-container {
   width: 1500px;
-  margin: 50px auto;
-}
-
-.main-title-container {
-  background-color: #f7fee7;
-  margin-bottom: 100px;
-  padding: 10px 0 10px 0;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.075);
-  display: flex;
-  justify-content: space-between;
-}
-.main-title {
-  color: #444;
-  font-size: 15px;
-  font-weight: 500;
-  font-family: monospace;
-  line-height: 2;
-  letter-spacing: 3px;
-  margin-left: 10px;
-  align-self: center;
-}
-
-.gallery-container {
-  width: 1040px;
-  background-color: #f7fee7;
-  padding: 10px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 250px);
-  justify-content: center;
-  gap: 5px;
-  border: 2px solid #ebfcca;
 }
 
-.gallery-img {
-  width: 250px;
+/* SMALLER COMPONENTS */
+
+/* Heading Components */
+.hero-title--primary {
+  color: rgba(255, 251, 235, 0.867);
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  line-height: 1.5;
+  grid-column: 1;
+  margin-left: 24px;
 }
 
-.main-title-nav {
-  margin-right: 30px;
+.hero-title--secondary {
+  color: #fffbeb;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  grid-column: 1 / -1;
+  margin-top: 4px;
+  margin-left: 24px;
+}
+
+.hero-title--span {
+  font-size: 74px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  font-style: italic;
+}
+
+.header-img {
+  background-image: url("./images/andrew-spencer-B2RKwf2IaJU-unsplash.jpg");
+  height: 800px;
+}
+/* Navigation */
+.main-nav {
   display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.main-title-slogan {
-  font-weight: 500;
-  letter-spacing: 0.5;
-  line-height: 3;
-  font-family: monospace;
-  font-size: 50px;
-  font-weight: serif;
-  align-self: center;
+  justify-content: flex-end;
+  gap: 20px;
+  grid-row: 1;
+  grid-column: 3;
+  margin-right: 24px;
 }
 
 .main-title-link:link,
 .main-title-link:visited {
-  color: #444;
-  font-size: 16px;
+  /* color: #444; */
+  color: rgba(255, 251, 235, 0.867);
+  font-size: 18px;
   font-weight: 400;
-  font-family: monospace;
+
   line-height: 2;
   letter-spacing: 3px;
   text-decoration: none;
@@ -78,6 +83,6 @@ body {
 
 .main-title-link:hover,
 .main-title-link:active {
-  color: #65a30d;
+  color: #fffbeb;
   font-size: 16px;
 }

@@ -7,7 +7,8 @@
 body {
   /* background-color: #ebfcca; */
   /* background-color: #ffedd5; */
-
+  /* background-color: #f7f5f1; */
+  background-color: #eeeae3;
   font-family: "Playfair Display", serif;
 }
 
@@ -20,7 +21,7 @@ body {
 
 /* MAJOR COMPONENTS */
 .content-container {
-  width: 1500px;
+  width: 1300px;
   margin: 0 auto;
 }
 
@@ -28,7 +29,7 @@ body {
 
 /* Heading Components */
 .hero-title--primary {
-  color: rgba(255, 251, 235, 0.867);
+  color: #343330;
   font-size: 30px;
   font-weight: 400;
   letter-spacing: -0.5px;
@@ -38,7 +39,7 @@ body {
 }
 
 .hero-title--secondary {
-  color: #fffbeb;
+  color: #656461;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
@@ -49,19 +50,17 @@ body {
 }
 
 .hero-title--span {
+  color: #343330;
   font-size: 74px;
   font-weight: 400;
   letter-spacing: -1px;
   font-style: italic;
 }
 
-.header-img {
-  background-image: url("./images/andrew-spencer-B2RKwf2IaJU-unsplash.jpg");
-  height: 800px;
-}
 /* Navigation */
-.main-nav {
+.nav--main {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   gap: 20px;
   grid-row: 1;
@@ -72,7 +71,7 @@ body {
 .main-title-link:link,
 .main-title-link:visited {
   /* color: #444; */
-  color: rgba(255, 251, 235, 0.867);
+  color: #343330;
   font-size: 18px;
   font-weight: 400;
 
@@ -83,6 +82,28 @@ body {
 
 .main-title-link:hover,
 .main-title-link:active {
-  color: #fffbeb;
-  font-size: 16px;
+  color: #656461;
+}
+
+.nav--footer {
+  margin: 12px auto;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link--footer:link .icon--footer,
+.nav-link--footer:visited .icon--footer {
+  fill: #343330;
+}
+
+.nav-link--footer:hover .icon--footer,
+.nav-link--footer:active .icon--footer {
+  fill: #656461;
+}
+
+.gallery {
+  margin-bottom: 64px;
+}
+.gallery-img {
+  width: 1300px;
 }

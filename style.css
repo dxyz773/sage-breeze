@@ -154,3 +154,25 @@ p {
   padding: 8px 16px;
   border-radius: 16px;
 }
+
+.form {
+  font-family: inherit;
+}
+
+.tasks {
+  list-style: none;
+}
+li {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.form_section {
+  margin-left: 10px;
+}
+
+.pink_letters {
+  color: #ec4899;
+}
